@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTb-4R-mvK">
+                                <rect key="frame" x="225" y="144" width="176" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Calculate!">
+                                    <color key="titleColor" red="1" green="0.4807726901404018" blue="0.098111261768240698" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="% Alcohol Content per Beer" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05m-k5-z33">
+                                <rect key="frame" x="16" y="47" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="78k-h2-Q6g">
+                                <rect key="frame" x="14" y="85" width="572" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igf-2P-Hqf">
+                                <rect key="frame" x="299" y="283" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="05m-k5-z33" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4PF-sx-43x"/>
+                            <constraint firstItem="05m-k5-z33" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="F9o-PT-pXi"/>
+                            <constraint firstItem="05m-k5-z33" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="MJe-6g-ncG"/>
+                            <constraint firstItem="78k-h2-Q6g" firstAttribute="top" secondItem="05m-k5-z33" secondAttribute="bottom" constant="8" id="NfD-7R-zdG"/>
+                            <constraint firstItem="VTb-4R-mvK" firstAttribute="top" secondItem="78k-h2-Q6g" secondAttribute="bottom" constant="29" id="OzL-Pm-SIi"/>
+                            <constraint firstItem="05m-k5-z33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PI0-EI-p0V"/>
+                            <constraint firstItem="05m-k5-z33" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UKN-px-l1e"/>
+                            <constraint firstItem="78k-h2-Q6g" firstAttribute="width" secondItem="05m-k5-z33" secondAttribute="width" constant="-352" id="YV1-66-i4f"/>
+                            <constraint firstItem="78k-h2-Q6g" firstAttribute="centerX" secondItem="05m-k5-z33" secondAttribute="centerX" constant="13" id="cVh-cy-TlJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VTb-4R-mvK" secondAttribute="trailing" constant="183" id="dGt-Od-ncL"/>
+                            <constraint firstItem="VTb-4R-mvK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="209" id="kL4-t0-1SI"/>
+                            <constraint firstItem="78k-h2-Q6g" firstAttribute="width" secondItem="05m-k5-z33" secondAttribute="width" id="lfE-4b-aJt"/>
+                            <constraint firstItem="05m-k5-z33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nct-St-iUm"/>
+                            <constraint firstItem="78k-h2-Q6g" firstAttribute="top" secondItem="05m-k5-z33" secondAttribute="bottom" constant="8" id="nsA-VU-tsN"/>
+                            <constraint firstItem="78k-h2-Q6g" firstAttribute="centerX" secondItem="05m-k5-z33" secondAttribute="centerX" id="qgj-X3-ZeG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4PF-sx-43x"/>
+                                <exclude reference="MJe-6g-ncG"/>
+                                <exclude reference="nct-St-iUm"/>
+                                <exclude reference="YV1-66-i4f"/>
+                                <exclude reference="cVh-cy-TlJ"/>
+                                <exclude reference="nsA-VU-tsN"/>
+                                <exclude reference="OzL-Pm-SIi"/>
+                                <exclude reference="dGt-Od-ncL"/>
+                                <exclude reference="kL4-t0-1SI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
