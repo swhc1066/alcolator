@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Whiskey-->
+        <!--Wine-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                             <outletCollection property="gestureRecognizers" destination="FZ1-9M-zBj" appends="YES" id="0BC-v8-IRP"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Whiskey" image="whiskey" id="TMN-yc-qKc"/>
+                    <tabBarItem key="tabBarItem" title="Wine" image="wine" id="TMN-yc-qKc"/>
                     <connections>
                         <outlet property="beerCounterSlider" destination="78k-h2-Q6g" id="uk8-HM-1QF"/>
                         <outlet property="beerPercentageTextField" destination="05m-k5-z33" id="94e-Ch-0Ry"/>
@@ -112,7 +112,7 @@
             </objects>
             <point key="canvasLocation" x="1802" y="1176"/>
         </scene>
-        <!--Wine-->
+        <!--Whiskey-->
         <scene sceneID="yiP-wu-KIg">
             <objects>
                 <viewController id="TlA-Yo-Ath" customClass="WhiskeyViewCOntrollerViewController" sceneMemberID="viewController">
@@ -203,7 +203,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wine" image="wine" id="SgB-8D-dJV"/>
+                    <tabBarItem key="tabBarItem" title="Whiskey" image="whiskey" id="SgB-8D-dJV"/>
                     <connections>
                         <outlet property="beerCounterSlider" destination="RFL-aE-NeO" id="bDQ-cZ-rA6"/>
                         <outlet property="beerPercentageTextField" destination="ZGK-wL-oQ0" id="nLL-qc-hJq"/>
@@ -217,7 +217,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="uNx-vH-K2Z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7NA-f0-DjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="SsT-75-MBM" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="NPC-Xa-NbA">
@@ -230,6 +229,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PcA-pk-8g2"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NA-f0-DjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1014" y="422"/>
         </scene>
