@@ -22,8 +22,8 @@
 
 - (IBAction)sliderValueChanged:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
-    self.navigationItem.title = [NSString stringWithFormat:@"Whiskey (%.00f shots)", sender.value];
     [self.beerPercentageTextField resignFirstResponder];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 
 - (void)buttonPressed:(UIButton *)sender;
