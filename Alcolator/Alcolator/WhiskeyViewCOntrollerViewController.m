@@ -19,17 +19,17 @@
     [self.beerPercentageTextField resignFirstResponder];
     
     int numberOfBeers = self.beerCounterSlider.value;
-    int ouncesInOneBeerGlass = 12;
+    int ouncesInOneBeerGlass = 12;  //assume they are 12oz beer bottles
     
-    float alcoholPercentageOfBeer = [self.beerPercentageTextField.text floatValue];
+    float alcoholPercentageOfBeer = [self.beerPercentageTextField.text floatValue] / 100;
     float ouncesOfAlcoholPerBeer = ouncesInOneBeerGlass * alcoholPercentageOfBeer;
-    float ouncesAlcoholTotal = ouncesOfAlcoholPerBeer * numberOfBeers;
+    float ouncesOfAlcoholTotal = ouncesOfAlcoholPerBeer * numberOfBeers;
     
     float ouncesInOneWhiskeyGlass = 1;  // a 1oz shot
     float alcoholPercentageOfWhiskey = 0.4;  // 40% is average
     
     float ouncesOfAlcoholPerWhiskeyGlass = ouncesInOneWhiskeyGlass * alcoholPercentageOfWhiskey;
-    float numberOfWhiskeyGlassesForEquivalentAlcoholAmount = ouncesAlcoholTotal / ouncesOfAlcoholPerWhiskeyGlass;
+    float numberOfWhiskeyGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWhiskeyGlass;
     
     NSString *beerText;
     
@@ -38,7 +38,6 @@
     } else {
         beerText = NSLocalizedString(@"beers", @"plural of beer");
     }
-    
     
     NSString *whiskeyText;
     
@@ -49,15 +48,7 @@
     }
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of whiskey.", nil), numberOfBeers, beerText, [self.beerPercentageTextField.text floatValue], numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
     self.resultLabel.text = resultText;
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
 
 @end
