@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Wine-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                             <outletCollection property="gestureRecognizers" destination="FZ1-9M-zBj" appends="YES" id="0BC-v8-IRP"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Wine" id="ebU-u2-Rbp">
+                    <navigationItem key="navigationItem" id="ebU-u2-Rbp">
                         <barButtonItem key="backBarButtonItem" title="Back" id="74z-H7-dJC"/>
                     </navigationItem>
                     <connections>
@@ -114,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="1802" y="1176"/>
         </scene>
-        <!--Whiskey-->
+        <!--Whiskey ViewC Ontroller View Controller-->
         <scene sceneID="yiP-wu-KIg">
             <objects>
                 <viewController id="TlA-Yo-Ath" customClass="WhiskeyViewCOntrollerViewController" sceneMemberID="viewController">
@@ -205,7 +205,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Whiskey" id="Svm-H2-xLz">
+                    <navigationItem key="navigationItem" id="Svm-H2-xLz">
                         <barButtonItem key="backBarButtonItem" title="Back" id="hFd-T9-93v"/>
                     </navigationItem>
                     <connections>
@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="1802" y="422"/>
         </scene>
-        <!--Alcolator-->
+        <!--Main Menu View Controller-->
         <scene sceneID="Fl3-4W-m4Y">
             <objects>
                 <viewController id="xH9-ef-h7H" customClass="MainMenuViewController" sceneMemberID="viewController">
@@ -261,7 +261,7 @@
                             <constraint firstItem="L60-4m-fQF" firstAttribute="centerX" secondItem="5PA-8R-eT0" secondAttribute="centerX" id="UbY-wb-lfi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Alcolator" id="USj-Kz-3y4"/>
+                    <navigationItem key="navigationItem" id="USj-Kz-3y4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuV-Mv-UrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

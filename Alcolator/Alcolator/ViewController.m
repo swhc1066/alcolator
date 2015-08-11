@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.title = @"Wine";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +35,7 @@
 
 - (IBAction)sliderValueChanged:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
+    self.navigationItem.title = [NSString stringWithFormat:@"Wine (%.00f glasses)", sender.value];
     [self.beerPercentageTextField resignFirstResponder];
 }
 
@@ -55,7 +57,7 @@
     if (numberOfBeers == 1) {
         beerText = NSLocalizedString(@"beer", @"singular beer");
     } else {
-        beerText = NSLocalizedString(@"beer", @"plural beers");
+        beerText = NSLocalizedString(@"beers", @"plural beers");
     }
     NSString *wineText;
     if (numberOfWineGlassesForEquivalentAlcoholAmount == 1) {

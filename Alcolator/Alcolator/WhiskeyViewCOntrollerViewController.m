@@ -14,6 +14,18 @@
 
 @implementation WhiskeyViewCOntrollerViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.title = @"Whiskey";
+}
+
+- (IBAction)sliderValueChanged:(UISlider *)sender {
+    NSLog(@"Slider value changed to %f", sender.value);
+    self.navigationItem.title = [NSString stringWithFormat:@"Whiskey (%.00f shots)", sender.value];
+    [self.beerPercentageTextField resignFirstResponder];
+}
+
 - (void)buttonPressed:(UIButton *)sender;
 {
     [self.beerPercentageTextField resignFirstResponder];
